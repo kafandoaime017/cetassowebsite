@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- wow js -->
+    <!-- <link rel="stylesheet" href="assets/lib/WOW-master/dist/"> -->
+    <style>
+        /* Animation d'apparition lente */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .cookie-box {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            color: black;
+            font-weight: 800;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+            /* Appliquer l'animation */
+            animation: fadeIn 1s ease forwards;
+            /* Initialiser l'opacité à 0 */
+            opacity: 0;
+        }
+
+        .accepter {
+            background-color: green;
+            font-weight: 800;
+            color:white !important;
+        }
+
+        .refuser {
+            background-color: rgb(255, 0, 0);
+            font-weight: 800;
+            color:white !important;
+        }
+        .activities-section .card:hover {
+        transform: scale(1.02); /* Zoom horizontal */
+        transition: transform 0.3s ease; /* Transition fluide */
+    }
+
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .owl-prev {
+        left: 5px;
+        background-color: rgba(255, 217, 0, 0.7) !important;
+        height: 60px;
+        width: 60px;
+        border-radius: 50% !important;
+    }
+
+    .owl-next {
+        right: 5px;
+        background-color: rgba(255, 217, 0, 0.7) !important;
+        height: 60px;
+        width: 60px;
+        border-radius: 50% !important;
+    }
+    .navbar
+    {
+        top: 0px !important;
+    }
+    .gg
+    {
+        position: relative;
+        top: 5px;
+        border: 4Px solid orange !important;
+    }
+    .ban 
+    {
+        /* height: 160px; */
+        border-bottom: 6px solid orange;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+    .ban h5
+    {
+        color: orange !important;
+        font-size: 20Px;
+        font-weight: 900;
+    }
+    .ee 
+    {
+        border-bottom: 4px solid orange !important;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Spinner Start-->
+<div class="loading-container">
+    <div class="loading-curtain">
+        <img class="shadow" style="border-radius: 80px;" src="assets/images/logo2.png" height="120" width="120" alt="">
+    </div>
+    <div class="loading-curtain2">
+        <span class="loader"></span>
+    </div>
+</div>
+<!-- Banner -->
+<div class="Home">
+    <!-- Topbar -->
+    <!-- <div class="topbar">
+        <div>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div>
+            <h6>+21256000003</h6>
+        </div>
+    </div> -->
+    <!-- End Topbar -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm p-2">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#" style="font-weight: 900;color:rgb(213, 181, 2);text-shadow: 0px 1px 1px rgb(72, 72, 72);font-size: 25px;">CETASSO</a>
+            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-bar"></span>
+                <span class="navbar-toggler-icon-bar"></span>
+                <span class="navbar-toggler-icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="membres.html">Membres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partenaires.html">Partenaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</div>
+<!-- Banner -->
+
+<div class="ban p-5" style="background-color: rgb(37, 37, 37);">
+    <div class="container  my-5">
+        <div class="row d-flex justify-content-center">
+           <!-- <p>
+            <small>
+                Le Cercle des Etudiants Africains du Sud Sahara, CETASSO, est une association étudiante. Elle regroupe la totalité des étudiants inscrits dans différentes facultés et écoles de l'Université Mohamed Premier d'Oujda. La volonté première de l'association est de créer des liens entre tous les étudiants au delà des frontières culturelles, religieuses, ethniques et géographiques afin de les aider dans leurs études et aussi de créer une réelle connivence entre tous les étudiants de la ville d'Oujda et les différentes associations étudiantes
+            </small>
+           </p> -->
+            <!-- <h4 class="my-4 text-center" style="color: rgb(255, 213, 4);font-weight: 800;">PRESENTATION DU CETASSO</h4> -->
+            <div class="col-lg-2 d-flex justify-content-center">
+               
+                <div  style="border-radius: 100%; height: 150px;width: 150px;" class="card gg d-flex justify-content-center my-4  p-2  border-0 shadow-sm">
+                    <div class="image d-flex justify-content-center">
+                        <img src="assets/images/logo2.png"  class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <h5 style="font-weight: 900;color: white;" class="text-center ">PRESENTATION DU CETASSO</h5>
+            <p style="color:white;font-weight: 700;text-align: justify;">
+                <small>
+                    Le Cercle des Etudiants Africains du Sud Sahara, CETASSO, est une association étudiante. Elle regroupe la totalité des étudiants inscrits dans différentes facultés et écoles de l'Université Mohamed Premier d'Oujda. La volonté première de l'association est de créer des liens entre tous les étudiants au delà des frontières culturelles, religieuses, ethniques et géographiques afin de les aider dans leurs études et aussi de créer une réelle connivence entre tous les étudiants de la ville d'Oujda et les différentes associations étudiantes. Son champ d'action est vaste, puisqu'il passe de l'organisation de soirées étudiantes, des journées culturelles mettant en valeur les différentes cultures, à la participation au financement des sortie de terrain, ainsi que des journées sportives effectuées tous les ans.
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="  px-4 my-5 py-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-11 ">
+                <div class="card ee shadow-sm rounded-5 p-3 border-0">
+                    Le Cercle des Etudiants Africains du Sud Sahara, CETASSO, est une association étudiante. Elle regroupe la totalité des étudiants inscrits dans différentes facultés et écoles de l'Université Mohamed Premier d'Oujda. La volonté première de l'association est de créer des liens entre tous les étudiants au delà des frontières culturelles, religieuses, ethniques et géographiques afin de les aider dans leurs études et aussi de créer une réelle connivence entre tous les étudiants de la ville d'Oujda et les différentes associations étudiantes. Son champ d'action est vaste, puisqu'il passe de l'organisation de soirées étudiantes, des journées culturelles mettant en valeur les différentes cultures, à la participation au financement des sortie de terrain, ainsi que des journées sportives effectuées tous les ans.
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<br> <br>
+
+<footer class="p-3 py-4 text-white">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4">
+                <ul>
+                    <li style="color:orange;font-weight: 800;font-size: 20px;">RESUME</li> <hr>
+                    <li>
+                       <small style="text-align: justify;">
+                        Le CETASSO est une institution mais aussi une famille dont les membres ( des étudiants sub-sahariens de la ville d'Oujda) venant des quatre coins de l'Afrique, partagent une diversité multiculturelle
+                       </small>
+                       <p class=" my-2 py-1 px-2">
+                        <img src="assets/images/logo2.png" height="100" width="100" alt="">
+                       </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul>
+                    <li style="color:orange;font-weight: 800;font-size: 20px;">LIENS RAPIDES</li><hr>
+                    <li class="mx-4 text-white fw-bold py-1"><a style="color:white;text-decoration: none;" href="">Acceuil</a></li>
+                    <li class="mx-4 text-white fw-bold py-1"><a style="color:white;text-decoration: none;" href="">Présentation</a></li>
+                    <li class="mx-4 text-white fw-bold py-1"><a style="color:white;text-decoration: none;" href="">Membres</a></li>
+                    <li class="mx-4 text-white fw-bold py-1"><a style="color:white;text-decoration: none;" href="">Partenaires</a></li>
+                    <li class="mx-4 text-white fw-bold py-1"><a style="color:white;text-decoration: none;" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul>
+                    <li style="color:orange;font-weight: 800;font-size: 20px;">SUIVEZ-NOUS</li><hr>
+                    <li>
+                        <div class="d-flex">
+                            <li><a style="text-decoration: none;" href="#"><i style="border: 1px solid orange;" class="fab bg-dark m-1 text-white p-2 rounded-3  fa-facebook-f"></i><span class="mx-2 text-white fw-bolder" style="text-decoration: none;">Facebook</span></a></li>
+                            <li><a style="text-decoration: none;" href="#"><i style="border: 1px solid orange;" class="fab bg-dark m-1 text-white p-2 rounded-3  fab fa-instagram"></i><span class="mx-2 text-white fw-bolder" style="text-decoration: none;">Instagram</span></a></li>
+                            <li><a style="text-decoration: none;" href="#"><i style="border: 1px solid orange;" class="fab bg-dark m-1 text-white p-2 rounded-3  fab fa-twitter"></i><span class="mx-2 text-white fw-bolder" style="text-decoration: none;">Twitter</span></a></li>
+                            <li><a style="text-decoration: none;" href="#"><i style="border: 1px solid orange;" class="fab bg-dark m-1 text-white p-2 rounded-3  fab fa-whatsapp"></i><span class="mx-2 text-white fw-bolder" style="text-decoration: none;">WhatsApp</span></a></li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">
+            <small class="text-center">Tous droits réservés <a style="color:orange;text-decoration: none;font-weight: 800;" href="index.html">CETASSO </a>2024</small>
+        </p>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="assets/lib/jquery.js"></script>
+<script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- FancyBox JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/lib/WOW-master/dist/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+    </script>
+
+</body>
+</html>
